@@ -1,4 +1,10 @@
 .main {
-  height: 100px;
-  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 1440px;
+  padding: 45px 81px;
 }
