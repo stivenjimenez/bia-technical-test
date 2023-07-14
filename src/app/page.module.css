@@ -1,10 +1,5 @@
 .main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.wrapper {
-  width: 1440px;
+  margin: 0 auto;
+  max-width: 1440px;
   padding: 45px 81px;
 }
