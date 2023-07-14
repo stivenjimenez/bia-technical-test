@@ -38,7 +38,7 @@ export default async function Country({ params }) {
         <div className={styles.info}>
           <h2>{country.name.common}</h2>
           <div className={styles.infoColumns}>
-            <div>
+            <div className={styles.infoColumnsRight}>
               <p className={styles.infoItem}>
                 <span>Native Name: </span>
                 {nativeName}
@@ -60,6 +60,7 @@ export default async function Country({ params }) {
                 {country.capital[0]}
               </p>
             </div>
+
             <div>
               <p className={styles.infoItem}>
                 <span>Top Level Domain: </span>
