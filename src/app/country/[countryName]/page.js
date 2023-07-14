@@ -1,18 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BiArrowBack } from "react-icons/bi";
-
+import { getCountryByNameAPI } from "@/services/countries";
 import styles from "./country.module.css";
-async function getCountry(name) {
-  const res = await fetch(
-    `https://restcountries.com/v3.1/name/${name}?fields=name,population,region,subregion,capital,tld,currencies,languages,borders,flags `
-  );
-  const country = await res.json();
-  return country;
-}
 
 export default async function Country({ params }) {
-  const data = await getCountry(params.countryName);
+  const data = await getCountryByNameAPI(params.countryName);
   const country = data[0];
 
   const nativeName = Object.entries(country.name.nativeName).map(
