@@ -1,4 +1,5 @@
 import { Nunito_Sans } from "next/font/google";
+import Header from "@/components/Header";
 import "./globals.css";
 
 export const nunito_sans = Nunito_Sans({
@@ -14,7 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={nunito_sans.className}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
