@@ -13,7 +13,16 @@
 
 .link {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #111517;
+  margin-bottom: 90px;
 }
+
+.icon {
+  margin-right: 10px;
+}
+
 .wrapper {
   display: flex;
   justify-content: space-between;

@@ -10,9 +10,22 @@
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0px 81px;
 }
 
 .title {
   font-size: 24px;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 8px;
 }

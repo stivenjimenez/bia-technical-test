@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BiArrowBack } from "react-icons/bi";
 
 import styles from "./country.module.css";
 async function getCountry(name) {
@@ -27,6 +28,7 @@ export default async function Country({ params }) {
   return (
     <main className={styles.main}>
       <Link className={styles.link} href="/">
+        <BiArrowBack size={20} className={styles.icon} />
         Back
       </Link>
 
