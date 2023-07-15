@@ -1,15 +1,10 @@
 "use client";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import styles from "./countryCard.module.css";
 export default function CountryCard({ country }) {
-  const router = useRouter();
-
   return (
-    <div
-      className={styles.card}
-      onClick={() => router.push(`/country/${country.name.common}`)}
-    >
+    <Link className={styles.card} href={`/country/${country.name.common}`}>
       <Image
         unoptimized
         width={267}
@@ -33,6 +28,6 @@ export default function CountryCard({ country }) {
           <span>Capital:</span> {country.capital[0]}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
