@@ -27,7 +27,6 @@ export default async function Country({ params }) {
 
       <section className={styles.wrapper}>
         <Image
-          unoptimized
           width={560}
           height={400}
           src={country.flags.svg}

@@ -6,7 +6,6 @@ export default function CountryCard({ country }) {
   return (
     <Link className={styles.card} href={`/country/${country.name.common}`}>
       <Image
-        unoptimized
         width={267}
         height={160}
         src={country.flags.svg}
