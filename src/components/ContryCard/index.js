@@ -1,7 +1,7 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./countryCard.module.css";
+
 export default function CountryCard({ country }) {
   return (
     <Link className={styles.card} href={`/country/${country.name.common}`}>
