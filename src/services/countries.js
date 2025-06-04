@@ -7,7 +7,7 @@ export async function getAllCountriesAPI() {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.erro(error);
+    console.error(error);
     throw new Error("Error fetching countries");
   }
 }
@@ -21,7 +21,7 @@ export async function getCountriesByRegionAPI(region) {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.erro(error);
+    console.error(error);
     throw new Error("Error fetching countries");
   }
 }
